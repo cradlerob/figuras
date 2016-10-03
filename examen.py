@@ -15,7 +15,7 @@ def empaquetar(lista):
                 lista_tup.add((lista[x - 1], cont))
                 cont = 0
         return lista_tup
-    except Exception, e:
+    except Exception:
         return "Datos invalidos"
 
 

@@ -26,5 +26,5 @@ class tienda():
             suma = (total * 15) / 100
             suma = suma + total
             return suma
-        except Exception, e:
+        except Exception:
             return "Error: dato invalido"

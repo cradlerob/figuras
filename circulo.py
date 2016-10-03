@@ -13,7 +13,7 @@ def calcularArea(radio):
         import math
         area = round(math.pi, 2) * (radio**2)
         print area
-    except Exception, e:
+    except Exception:
         print"Datos invalidos"
 
 

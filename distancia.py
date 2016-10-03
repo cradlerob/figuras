@@ -17,5 +17,5 @@ class distancia():
             pulgadas = distancia * 39.3701
 
             return "pies=%.2f pulgadas=%.2f" % (pies, pulgadas)
-        except Exception, e:
+        except Exception:
             return "Datos invalidos"

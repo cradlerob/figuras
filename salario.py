@@ -14,5 +14,5 @@ class salario():
 
             nuevoSalario = salario + ((salario * 25) / 100)
             return "nuevo Salario " + str(nuevoSalario)
-        except Exception, e:
+        except Exception:
             return "Datos invalidos"

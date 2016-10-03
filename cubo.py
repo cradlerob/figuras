@@ -12,7 +12,7 @@ def calcularCubo(num):
     try:
 
         print (num ** 3)
-    except Exception, e:
+    except Exception:
         print"Datos invalidos"
 
 

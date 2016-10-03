@@ -9,7 +9,7 @@ class figuras():
             lado = float(lado)
             return lado ** 2
 
-        except Exception, e:
+        except Exception:
             return 'Datos invalidos'
 
     def rectangulo(base, altura):
@@ -18,7 +18,7 @@ class figuras():
             altura = abs(float(altura))
             return base * altura
 
-        except Exception, e:
+        except Exception:
             return 'Datos invalidos'
 
     def triangulo(base, altura):
@@ -27,7 +27,7 @@ class figuras():
             altura = abs(float(altura))
             return (base * altura) / 2
 
-        except Exception, e:
+        except Exception:
             return 'Datos invalidos'
 
     def circulo(radio):
@@ -35,5 +35,5 @@ class figuras():
             radio = float(radio)
             return (radio ** 2) * 3.1416
 
-        except Exception, e:
+        except Exception:
             return 'Datos invalidos'

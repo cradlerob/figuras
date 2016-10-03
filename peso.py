@@ -19,5 +19,5 @@ class peso():
             libras = peso * 2.20462
             toneladas = peso / 1000
             return "gramos=%.2f libras=%.2f toneladas=%.2f" % (gramos, libras, toneladas)
-        except Exception, e:
+        except Exception:
             return "Datos invalidos"

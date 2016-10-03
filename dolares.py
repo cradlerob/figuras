@@ -22,5 +22,5 @@ class dolares():
             dolar = float(dolar)
             dolares = pesos * dolar
             return dolares
-        except Exception, e:
+        except Exception:
             return "Datos invalidos"

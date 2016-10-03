@@ -23,5 +23,5 @@ class porcentajes(object):
             porcHom = float((hombres * 100) / total)
             porcMuj = float((mujeres * 100) / total)
             return "Porc. Hombres %.2f Porc. Mujeres %.2f" % (porcHom, porcMuj)
-        except Exception, e:
+        except Exception:
             return "Datos invalidos"

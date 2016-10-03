@@ -26,5 +26,5 @@ class parentesis():
                         ls.remove(max(ls))
             if len(ls) == 0:
                 return "OK"
-        except Exception, e:
+        except Exception:
             return

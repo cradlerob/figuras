@@ -21,5 +21,5 @@ class contador():
                 else:
                     contador[w] = 1
             return contador.items()
-        except Exception, e:
+        except Exception:
             return "Datos invalidos"

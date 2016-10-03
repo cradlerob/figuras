@@ -14,5 +14,5 @@ class calificaciones():
                 else:
                     return "Calificacion erronea"
             return sum / len(examenes)
-        except Exception, e:
+        except Exception:
             return "Dato invalido"
