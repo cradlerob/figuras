@@ -19,7 +19,7 @@ class Testcalificaciones(unittest.TestCase):
     def test_cal_3_inval(self):
         self.calt(['diez', 'nueve', 'ocho'], "Dato invalido")
 
-    def test_cal_3_inval(self):
+    def test_cal_3_inval_2(self):
         self.calt([11, 20, 10], "Calificacion erronea")
 
     def calt(self, i, res):

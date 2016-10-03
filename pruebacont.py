@@ -9,7 +9,7 @@ class Testcontador(unittest.TestCase):
 
     def test_cont_1(self):
         self.contt("Que lindo dia que hace hoy", [
-                   ('hace', 1), ('hoy', 1), ('que', 2), ('dia', 1), ('lindo', 1)])
+              ('hace', 1), ('hoy', 1), ('que', 2), ('dia', 1), ('lindo', 1)])
 
     def contt(self, i, res):
         resultado = self.contador.contador(i)
