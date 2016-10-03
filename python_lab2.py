@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import doctest
+
+
 def minutes_in_weeks(weeks):
     """ 1: (Task 0.5.1) Minutes in a Week
 
@@ -9,7 +11,7 @@ def minutes_in_weeks(weeks):
     >>> minutes_in_weeks(2)
     20160
     """
-    return weeks*10080
+    return weeks * 10080
 
 
 def remainder_without_mod(numerator, divisor):
@@ -25,7 +27,8 @@ def remainder_without_mod(numerator, divisor):
     # else:
     #     return remainder_without_mod((numerator-divisor),divisor)
 
-    return numerator if numerator < divisor else remainder_without_mod(numerator-divisor,divisor)
+    return numerator if numerator < divisor else remainder_without_mod(numerator - divisor, divisor)
+
 
 def divisable_by_3(num):
     """
@@ -38,6 +41,7 @@ def divisable_by_3(num):
 
     return (num % 3) == 0
 
+
 def predict_expression(x, y, prediction):
     """
     4: (Task 0.5.4) Conditional Expression
@@ -49,7 +53,7 @@ def predict_expression(x, y, prediction):
     #     return 2 ** (y + 1/2)
     # else:
     #     return 2 ** (y - 1/2)
-    return 2 ** (y + 1/2) if x + 10 < 0 else 2 ** (y -1/2)
+    return 2 ** (y + 1 / 2) if x + 10 < 0 else 2 ** (y - 1 / 2)
 
 
 def squares_set(numbers):
@@ -65,9 +69,10 @@ def squares_set(numbers):
     #     new_Set.add(num ** 2)
     # return new_Set
     return set(
-        x ** 2 
+        x ** 2
         for x in numbers
     )
+
 
 def pows_two(numbers):
     """
@@ -81,9 +86,10 @@ def pows_two(numbers):
     #     new_Set.add(2 ** num)
     # return new_Set
     return set([
-        2 ** x 
+        2 ** x
         for x in numbers
     ])
+
 
 def set_product57(xs, ys):
     """
@@ -99,8 +105,8 @@ def set_product57(xs, ys):
 
     # return new_Set
     return set([
-        numXs * numYs 
-        for numYs in ys 
+        numXs * numYs
+        for numYs in ys
         for numXs in xs
     ])
 
@@ -121,13 +127,14 @@ def set_product58(xs, ys):
 
     # return new_Set
     return set([
-        numXs * numYs 
-        for numYs in ys 
-        for numXs in xs 
+        numXs * numYs
+        for numYs in ys
+        for numXs in xs
         if numXs != numYs
     ])
-            
+
 #////////
+
 
 def intersection(Ss, Ts):
     """
@@ -136,8 +143,6 @@ def intersection(Ss, Ts):
     set([3, 4])
     """
     return Ss & Ts
-
-    
 
 
 def list_average(list_of_numbers):
@@ -150,7 +155,7 @@ def list_average(list_of_numbers):
     >>> list_average([20, 10, 15, 75])
     30
     """
-    return sum(list_of_numbers)/len(list_of_numbers)
+    return sum(list_of_numbers) / len(list_of_numbers)
 
 
 def cartesian_product(Xs, Ys):
@@ -161,7 +166,7 @@ def cartesian_product(Xs, Ys):
     [['A', 1], ['A', 2], ['A', 3], ['B', 1], ['B', 2], ['B', 3], ['C', 1], ['C', 2], ['C', 3]]
     """
     return [
-        [x, y] 
+        [x, y]
         for x in Xs
         for y in Ys
     ]
@@ -178,9 +183,9 @@ def LofL_sum(list_of_lists):
 
     """
     return sum([
-        sum(x) 
+        sum(x)
         for x in list_of_lists
-    ] ) 
+    ])
 
 
 def zero_sum_list(list_of_numbers):
@@ -191,11 +196,12 @@ def zero_sum_list(list_of_numbers):
     """
     return [
         (x, y, z)
-        for x in list_of_numbers 
-        for y in list_of_numbers 
-        for z in list_of_numbers 
+        for x in list_of_numbers
+        for y in list_of_numbers
+        for z in list_of_numbers
         if (x + y + z) == 0
     ]
+
 
 def non_zero_sum_list(list_of_numbers):
     """
@@ -206,11 +212,11 @@ def non_zero_sum_list(list_of_numbers):
     """
     #ls = [(x, y, z) for x in list_of_numbers for y in list_of_numbers for z in list_of_numbers if (x + y + z) == 0]
     return filter(
-        lambda (x, y, z):(x, y ,z) != (0, 0, 0) ,[
+        lambda (x, y, z): (x, y, z) != (0, 0, 0), [
             (x, y, z)
-            for x in list_of_numbers 
-            for y in list_of_numbers 
-            for z in list_of_numbers 
+            for x in list_of_numbers
+            for y in list_of_numbers
+            for z in list_of_numbers
             if (x + y + z) == 0
         ])
 
@@ -223,11 +229,11 @@ def first_zero_sum_list(list_of_numbers):
     """
     return [
         (x, y, z)
-        for x in list_of_numbers 
-        for y in list_of_numbers 
-        for z in list_of_numbers 
+        for x in list_of_numbers
+        for y in list_of_numbers
+        for z in list_of_numbers
         if (x + y + z) == 0
-    ] [:1]
+    ][:1]
 
 
 def is_element_repeated(things):
@@ -249,10 +255,11 @@ def odd_num_list(n):
     [1, 3, 5, 7, 9, 11, 13, 15]
     """
     return [
-        x 
-        for x in range(17) 
+        x
+        for x in range(17)
         if x % 2 != 0
     ]
+
 
 def range_and_zip(letters):
     """
@@ -262,7 +269,8 @@ def range_and_zip(letters):
 
     Do not use a list comprehension use range and zip
     """
-    return zip(range(len(letters) ), letters)
+    return zip(range(len(letters)), letters)
+
 
 def list_sum_zip(A, B):
     """
@@ -273,8 +281,8 @@ def list_sum_zip(A, B):
     >>> list_sum_zip([10,20,30],[1,2,3])
     [11, 22, 33]
     """
-    return [ 
-        i + j 
+    return [
+        i + j
         for i, j in zip(A, B)
     ]
 
@@ -286,8 +294,8 @@ def value_list(k, dlist):
     ['Sean', 'Roger', 'Pierce']
     """
     return [
-        dlist[x][k] 
-        for x in xrange(len(dlist)) 
+        dlist[x][k]
+        for x in xrange(len(dlist))
     ]
 
 
@@ -305,8 +313,8 @@ def value_list_m(k, dlist):
     ['Elijah', 'NOT PRESENT']
     """
     return [
-         'NOT PRESENT'
-        for x in xrange(len(dlist)) 
+        'NOT PRESENT'
+        for x in xrange(len(dlist))
         if (dlist[x].get(k) is None)
         else dlist[x][k]
     ]
@@ -319,16 +327,16 @@ def square_dict(n):
     >>> square_dict(10)
     {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
     """
-    return { x: x ** 2 for x in xrange(n)}
+    return {x: x ** 2 for x in xrange(n)}
 
 
-#def dictionary_mapping(names, id2salaries):
+# def dictionary_mapping(names, id2salaries):
     """
     (Task 0.5.26) A dictionary mapping names to salaries
     >>> dictionary_mapping(['Larry', 'Curly', 'Moe'],{0:100.0, 1:120.50, 2:99})
     {'Larry': 100.0, 'Moe': 99, 'Curly': 120.5}
     """
-    return {map({names:id2salaries},names,id2salaries)}
+    return {map({names: id2salaries}, names, id2salaries)}
 
 
 def nextInts(L):
@@ -341,9 +349,9 @@ def nextInts(L):
     [2, 6, 8]
     """
     return [
-        x + 1 
+        x + 1
         for x in L
-        ]
+    ]
 
 
 def cubes(L):
@@ -356,8 +364,8 @@ def cubes(L):
     [1, 8, 27]
     """
     return [
-            x ** 3 
-            for x in L]
+        x ** 3
+        for x in L]
 
 
 def dict2list(dct, keylist):
@@ -371,8 +379,8 @@ def dict2list(dct, keylist):
     ['B', 'C', 'A']
     """
     return [
-            dct.get(keylist[i]) 
-            for i in  range(len(keylist))]
+        dct.get(keylist[i])
+        for i in range(len(keylist))]
 
 
 def list2dict(L, keylist):
@@ -386,8 +394,8 @@ def list2dict(L, keylist):
     {'a':'A', 'b':'B', 'c':'C'}
     """
     return{
-        keylist[i] : L[i] 
-        for i in xrange(len(keylist)) 
+        keylist[i]: L[i]
+        for i in xrange(len(keylist))
     }
 
 

@@ -11,14 +11,16 @@ Dolares 1450.00
 >>> calcularDivisas(200.1,10.1)
 Dolares 2021.01
 """
+
+
 class dolares():
 
-	def calcularDivisas(self, pesos, dolar):
+    def calcularDivisas(self, pesos, dolar):
 
-		try:
-			pesos=float(pesos)
-			dolar=float(dolar)
-			dolares=pesos*dolar
-			return dolares
-		except Exception, e:
-			return "Datos invalidos"
+        try:
+            pesos = float(pesos)
+            dolar = float(dolar)
+            dolares = pesos * dolar
+            return dolares
+        except Exception, e:
+            return "Datos invalidos"

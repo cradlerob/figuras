@@ -17,12 +17,14 @@ Error: dato invalido
 1150
 
 """
+
+
 class tienda():
-		
-	def calculaTotal(self, total):
-		try:
-			suma= (total * 15) / 100
-			suma= suma + total
-			return suma
-		except Exception, e:
-			return "Error: dato invalido"
+
+    def calculaTotal(self, total):
+        try:
+            suma = (total * 15) / 100
+            suma = suma + total
+            return suma
+        except Exception, e:
+            return "Error: dato invalido"

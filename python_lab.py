@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 def minutes_in_weeks(weeks):
     """ 1: (Task 0.5.1) Minutes in a Week
     >>> minutes_in_weeks(1)
@@ -18,7 +19,6 @@ def remainder_without_mod(numerator, divisor):
     2
     """
     return numerator - ((numerator / divisor) * divisor)
-
 
 
 def divisible_by_3(num):
@@ -71,8 +71,6 @@ def set_product57(xs, ys):
     return set([i * j for i in xs for j in ys])
 
 
-
-
 def set_product58(xs, ys):
     """8: (Task 0.5.8) Double comprehension evaluating to five-element set
     Return a set containing the multiplicacion of every elment in a set multiplied by the other
@@ -80,7 +78,7 @@ def set_product58(xs, ys):
     >>> set_product58({1,2,3},{3,4,5})
     set([3, 4, 5, 6, 8, 10, 12, 15])
     """
-    return set([i * j for i in xs for j in ys if i!=j])
+    return set([i * j for i in xs for j in ys if i != j])
 
 
 def intersection(Ss, Ts):

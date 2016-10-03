@@ -5,17 +5,18 @@
 3.14
 
 """
+
+
 def calcularArea(radio):
 
-	try:
-		import math
-		area=round(math.pi,2) * (radio**2)
-		print area
-	except Exception, e:
-		print"Datos invalidos"
+    try:
+        import math
+        area = round(math.pi, 2) * (radio**2)
+        print area
+    except Exception, e:
+        print"Datos invalidos"
 
 
-
-if __name__=="__main__":
-	import doctest
-	doctest.testmod()
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()

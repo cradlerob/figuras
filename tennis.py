@@ -19,21 +19,19 @@ def score(jug1, jug2):
             result = [('deuce'), ('deuce')]
             adj1 = 0
             adj2 = 0
-	if adj1 > 0 and res1 == 'deuce':
+        if adj1 > 0 and res1 == 'deuce':
             result = ["adv" + str(adj1), 'deuce']
-	if adj2 > 0 and res1 == 'deuce':
+        if adj2 > 0 and res1 == 'deuce':
             result = ['deuce', "adv" + str(adj2)]
-	if adj1 > 0 and adj2 > 0 and res1 == 'deuce':
+        if adj1 > 0 and adj2 > 0 and res1 == 'deuce':
             result = ["adv" + str(adj1), "adv" + str(adj2)]
     else:
-        result = [(res1+15*jug1), (res2+15*jug2)]
+        result = [(res1 + 15 * jug1), (res2 + 15 * jug2)]
         adj1 += jug1
         adj2 += jug2
     print result
 
 
-
 if __name__ == "__main__":
     import doctest
     doctest.testfile("pruebatennis.txt")
-
